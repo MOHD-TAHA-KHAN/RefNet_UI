@@ -1,89 +1,102 @@
-import Frame2371 from "@/views/Frame2371";
-import Frame21259 from "@/views/Frame21259";
-import Frame2562 from "@/views/Frame2562";
-import Frame2209 from "@/views/Frame2209";
-import Frame2669 from "@/views/Frame2669";
-import Frame21117 from "@/views/Frame21117";
-import Frame2985 from "@/views/Frame2985";
-import Frame2890 from "@/views/Frame2890";
-import Frame2148 from "@/views/Frame2148";
-import Frame2791 from "@/views/Frame2791";
-import Frame237 from "@/views/Frame237";
-import Frame21353 from "@/views/Frame21353";
+import LandingPage from "@/pages/LandingPage";
+import LoginPage from "@/pages/LoginPage";
+import SignUpPage from "@/pages/SignUpPage";
+import Dashboard from "@/pages/Dashboard";
+import Profile from "@/pages/Profile";
+import JobListings from "@/pages/JobListings";
+import JobDetails from "@/pages/JobDetails";
+import Chat from "@/pages/Chat";
+import SettingsPage from "@/pages/SettingsPage";
+import AboutPage from "@/pages/AboutPage";
+import ContactPage from "@/pages/ContactPage";
+import OnboardingPage from "@/pages/OnboardingPage";
 
-export const routes = [{
-          path: "/frame2371",
-          component: Frame2371,
-          guid: "2:371",
-        },
-{
-          path: "/frame21259",
-          component: Frame21259,
-          guid: "2:1259",
-        },
-{
-          path: "/frame2562",
-          component: Frame2562,
-          guid: "2:562",
-        },
-{
-          path: "/frame2209",
-          component: Frame2209,
-          guid: "2:209",
-        },
-{
-          path: "/frame2669",
-          component: Frame2669,
-          guid: "2:669",
-        },
-{
-          path: "/frame21117",
-          component: Frame21117,
-          guid: "2:1117",
-        },
-{
-          path: "/frame2985",
-          component: Frame2985,
-          guid: "2:985",
-        },
-{
-          path: "/frame2890",
-          component: Frame2890,
-          guid: "2:890",
-        },
-{
-          path: "/frame2148",
-          component: Frame2148,
-          guid: "2:148",
-        },
-{
-          path: "/frame2791",
-          component: Frame2791,
-          guid: "2:791",
-        },
-{
+export interface RouteConfig {
+  path: string;
+  component: React.ComponentType;
+  name: string;
+  protected?: boolean;
+  showNavigation?: boolean;
+}
+
+export const routes: RouteConfig[] = [{
           path: "/",
-          component: Frame237,
-          guid: "2:37",
+          component: LandingPage,
+          name: "LandingPage",
+          showNavigation: false,
         },
 {
-          path: "/frame21353",
-          component: Frame21353,
-          guid: "2:1353",
+          path: "/login",
+          component: LoginPage,
+          name: "LoginPage",
+          showNavigation: false,
+        },
+{
+          path: "/signup",
+          component: SignUpPage,
+          name: "SignUpPage",
+          showNavigation: false,
+        },
+{
+          path: "/dashboard",
+          component: Dashboard,
+          name: "Dashboard",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/profile",
+          component: Profile,
+          name: "Profile",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/jobs",
+          component: JobListings,
+          name: "JobListings",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/jobs/:id",
+          component: JobDetails,
+          name: "JobDetails",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/chat",
+          component: Chat,
+          name: "Chat",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/settings",
+          component: SettingsPage,
+          name: "SettingsPage",
+          protected: true,
+          showNavigation: true,
+        },
+{
+          path: "/about",
+          component: AboutPage,
+          name: "AboutPage",
+          showNavigation: true,
+        },
+{
+          path: "/contact",
+          component: ContactPage,
+          name: "ContactPage",
+          showNavigation: true,
+        },
+{
+          path: "/onboarding",
+          component: OnboardingPage,
+          name: "OnboardingPage",
+          protected: true,
+          showNavigation: false,
         }];
 
 
-export const guidPathMap = new Map(
-  routes.map((item) => [item.guid, item.path])
-);
-export const pathGuidMap = new Map(
-  routes.map((item) => [item.path, item.guid])
-);
-
-export const getPathByGuid = (guid: string) => {
-  return guidPathMap.get(guid) || "";
-};
-
-export const getGuidByPath = (path: string) => {
-  return pathGuidMap.get(path) || "";
-};

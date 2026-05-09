@@ -1,5 +1,14 @@
+import { useNavigate } from "react-router";
 import "@/styles/Frame237.css";
-const Frame237 = () => {
+import "@/styles/clickable.css";
+
+const LandingPage = () => {
+    const navigate = useNavigate();
+    
+    const handleNavigation = (path: string) => {
+        navigate(path);
+    };
+    
     return (
         <div className="scroll-container">
             <div id="2_37" className="Pixso-frame-2_37">
@@ -53,21 +62,46 @@ const Frame237 = () => {
                                 </p>
                             </div>
                             <div id="2_48" className="Pixso-frame-2_48">
-                                <p id="2_49" className="Pixso-paragraph-2_49">
+                                <p 
+                                    id="2_49" 
+                                    className="Pixso-paragraph-2_49 clickable"
+                                    onClick={() => handleNavigation('/about')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     {"How it works"}
                                 </p>
-                                <p id="2_50" className="Pixso-paragraph-2_50">
+                                <p 
+                                    id="2_50" 
+                                    className="Pixso-paragraph-2_50 clickable"
+                                    onClick={() => handleNavigation('/contact')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     {"For Companies"}
                                 </p>
-                                <p id="2_51" className="Pixso-paragraph-2_51">
+                                <p 
+                                    id="2_51" 
+                                    className="Pixso-paragraph-2_51 clickable"
+                                    onClick={() => handleNavigation('/about')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     {"Pricing"}
                                 </p>
-                                <p id="2_52" className="Pixso-paragraph-2_52">
+                                <p 
+                                    id="2_52" 
+                                    className="Pixso-paragraph-2_52 clickable"
+                                    onClick={() => handleNavigation('/about')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     {"Blog"}
                                 </p>
                             </div>
                             <div id="2_53" className="Pixso-frame-2_53">
-                                <div id="2_54" className="stroke-wrapper-2_54">
+                                <div 
+                                    id="2_54" 
+                                    className="stroke-wrapper-2_54 clickable"
+                                    onClick={() => handleNavigation('/login')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     <div className="Pixso-frame-2_54">
                                         <div className="frame-content-2_54">
                                             <p
@@ -80,7 +114,12 @@ const Frame237 = () => {
                                     </div>
                                     <div className="stroke-2_54"></div>
                                 </div>
-                                <div id="2_55" className="Pixso-frame-2_55">
+                                <div 
+                                    id="2_55" 
+                                    className="clickable"
+                                    onClick={() => handleNavigation('/signup')}
+                                    style={{ cursor: 'pointer' }}
+                                >
                                     <div className="frame-content-2_55">
                                         <p
                                             id="2_56"
@@ -527,8 +566,181 @@ const Frame237 = () => {
                         </p>
                     </div>
                 </div>
+                <div className="stroke-2_99"></div>
+            </div>
+            <div id="2_102" className="stroke-wrapper-2_102">
+                <div className="Pixso-frame-2_102">
+                    <div className="frame-content-2_102">
+                        <p id="2_103" className="Pixso-paragraph-2_103">
+                            {"How RefNet Works"}
+                        </p>
+                        <div id="2_104" className="Pixso-frame-2_104">
+                            <div className="frame-content-2_104">
+                                <div
+                                    id="2_105"
+                                    className="Pixso-frame-2_105"
+                                    onClick={() => handleNavigation('/find-a-job')}
+                                >
+                                    <div className="frame-content-2_105">
+                                        <div
+                                            id="2_106"
+                                            className="Pixso-frame-2_106"
+                                        >
+                                            <div className="frame-content-2_106">
+                                                <div
+                                                    id="2_107"
+                                                    className="Pixso-vector-2_107"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            id="2_110"
+                                            className="Pixso-paragraph-2_110"
+                                        >
+                                            {"1. Find a Job"}
+                                        </p>
+                                        <p
+                                            id="2_111"
+                                            className="Pixso-paragraph-2_111"
+                                        >
+                                            {
+                                                "Browse thousands of openings at top IT companies"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="2_112"
+                                    className="Pixso-frame-2_112"
+                                    onClick={() => handleNavigation('/match-a-referrer')}
+                                >
+                                    <div className="frame-content-2_112">
+                                        <div
+                                            id="2_113"
+                                            className="Pixso-frame-2_113"
+                                        >
+                                            <div className="frame-content-2_113">
+                                                <div
+                                                    id="2_114"
+                                                    className="Pixso-vector-2_114"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            id="2_119"
+                                            className="Pixso-paragraph-2_119"
+                                        >
+                                            {"2. Match a Referrer"}
+                                        </p>
+                                        <p
+                                            id="2_120"
+                                            className="Pixso-paragraph-2_120"
+                                        >
+                                            {
+                                                "Get matched with professionals who work at that company"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="2_121"
+                                    className="Pixso-frame-2_121"
+                                    onClick={() => handleNavigation('/request-referral')}
+                                >
+                                    <div className="frame-content-2_121">
+                                        <div
+                                            id="2_122"
+                                            className="Pixso-frame-2_122"
+                                        >
+                                            <div className="frame-content-2_122">
+                                                <div
+                                                    id="2_123"
+                                                    className="Pixso-vector-2_123"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            id="2_126"
+                                            className="Pixso-paragraph-2_126"
+                                        >
+                                            {"3. Request Referral"}
+                                        </p>
+                                        <p
+                                            id="2_127"
+                                            className="Pixso-paragraph-2_127"
+                                        >
+                                            {
+                                                "Send your profile and request a referral with one click"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    id="2_128"
+                                    className="Pixso-frame-2_128"
+                                    onClick={() => handleNavigation('/track-and-get-hired')}
+                                >
+                                    <div className="frame-content-2_128">
+                                        <div
+                                            id="2_129"
+                                            className="Pixso-frame-2_129"
+                                        >
+                                            <div className="frame-content-2_129">
+                                                <div
+                                                    id="2_130"
+                                                    className="Pixso-vector-2_130"
+                                                ></div>
+                                            </div>
+                                        </div>
+                                        <p
+                                            id="2_133"
+                                            className="Pixso-paragraph-2_133"
+                                        >
+                                            {"4. Track & Get Hired"}
+                                        </p>
+                                        <p
+                                            id="2_134"
+                                            className="Pixso-paragraph-2_134"
+                                        >
+                                            {
+                                                "Monitor your referral status from pending to offer letter"
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="stroke-2_102"></div>
+            </div>
+            <div id="2_140" className="Pixso-frame-2_140">
+                <div className="frame-content-2_140">
+                    <p id="2_141" className="Pixso-paragraph-2_141">
+                        {"Professionals from:"}
+                    </p>
+                    <p id="2_142" className="Pixso-paragraph-2_142">
+                        {"Google"}
+                    </p>
+                    <p id="2_143" className="Pixso-paragraph-2_143">
+                        {"Flipkart"}
+                    </p>
+                    <p id="2_144" className="Pixso-paragraph-2_144">
+                        {"Infosys"}
+                    </p>
+                    <p id="2_145" className="Pixso-paragraph-2_145">
+                        {"Wipro"}
+                    </p>
+                    <p id="2_146" className="Pixso-paragraph-2_146">
+                        {"TCS"}
+                    </p>
+                    <p id="2_147" className="Pixso-paragraph-2_147">
+                        {"Amazon"}
+                    </p>
+                </div>
             </div>
         </div>
     );
 };
-export default Frame237;
+
+export default LandingPage;
