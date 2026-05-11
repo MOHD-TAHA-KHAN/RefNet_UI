@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
@@ -10,7 +10,7 @@ export const api = axios.create({
   },
 });
 
-// Request interceptor to add auth token
+// Attach auth token to every request
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('authToken');
@@ -19,17 +19,14 @@ api.interceptors.request.use(
     }
     return config;
   },
-  (error) => {
-    return Promise.reject(error);
-  }
+  (error) => Promise.reject(error)
 );
 
-// Response interceptor to handle errors
+// Handle 401 globally
 api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      // Handle unauthorized access
       localStorage.removeItem('authToken');
       window.location.href = '/login';
     }

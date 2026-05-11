@@ -1,68 +1,78 @@
 import { create } from 'zustand';
-
-interface User {
-  id: string;
-  name: string;
-  email: string;
-  profile?: string;
-}
+import { authService, type AuthUser } from '../services/authService';
 
 interface AuthState {
-  user: User | null;
+  user: AuthUser | null;
+  token: string | null;
   isAuthenticated: boolean;
   isLoading: boolean;
+  error: string | null;
   login: (email: string, password: string) => Promise<void>;
-  logout: () => void;
-  signup: (userData: Omit<User, 'id'> & { password: string }) => Promise<void>;
+  signup: (name: string, email: string, password: string, role?: string) => Promise<void>;
+  logout: () => Promise<void>;
+  clearError: () => void;
+  initAuth: () => Promise<void>;
 }
 
-export const useAuthStore = create<AuthState>((set) => ({
+export const useAuthStore = create<AuthState>((set, get) => ({
   user: null,
-  isAuthenticated: false,
+  token: localStorage.getItem('authToken'),
+  isAuthenticated: !!localStorage.getItem('authToken'),
   isLoading: false,
+  error: null,
 
-  login: async (email: string, password: string) => {
-    set({ isLoading: true });
+  login: async (email, password) => {
+    set({ isLoading: true, error: null });
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Mock user data
-      const user: User = {
-        id: '1',
-        name: 'John Doe',
-        email: email,
-        profile: 'Software Engineer'
-      };
-      
-      set({ user, isAuthenticated: true, isLoading: false });
-    } catch (error) {
-      set({ isLoading: false });
-      throw error;
+      const { user, token } = await authService.login({ email, password });
+      localStorage.setItem('authToken', token);
+      set({ user, token, isAuthenticated: true, isLoading: false });
+    } catch (err: unknown) {
+      const message =
+        (err as { response?: { data?: { message?: string } } })?.response?.data?.message ||
+        'Login failed. Please check your credentials.';
+      set({ isLoading: false, error: message });
+      throw err;
     }
   },
 
-  logout: () => {
-    set({ user: null, isAuthenticated: false });
+  signup: async (name, email, password, role = 'fresher') => {
+    set({ isLoading: true, error: null });
+    try {
+      const { user, token } = await authService.signup({ name, email, password, role: role as 'fresher' | 'professional' });
+      localStorage.setItem('authToken', token);
+      set({ user, token, isAuthenticated: true, isLoading: false });
+    } catch (err: unknown) {
+      const message =
+        (err as { response?: { data?: { message?: string } } })?.response?.data?.message ||
+        'Signup failed. Please try again.';
+      set({ isLoading: false, error: message });
+      throw err;
+    }
   },
 
-  signup: async (userData) => {
+  logout: async () => {
+    await authService.logout();
+    localStorage.removeItem('authToken');
+    set({ user: null, token: null, isAuthenticated: false });
+  },
+
+  clearError: () => set({ error: null }),
+
+  initAuth: async () => {
+    const token = localStorage.getItem('authToken');
+    if (!token) return;
     set({ isLoading: true });
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      const user: User = {
-        id: Date.now().toString(),
-        name: userData.name,
-        email: userData.email,
-        profile: userData.profile
-      };
-      
+      const user = await authService.getMe();
       set({ user, isAuthenticated: true, isLoading: false });
-    } catch (error) {
-      set({ isLoading: false });
-      throw error;
+    } catch {
+      localStorage.removeItem('authToken');
+      set({ user: null, token: null, isAuthenticated: false, isLoading: false });
     }
-  }
+  },
 }));
+
+// Selector helpers
+export const selectUser = (s: AuthState) => s.user;
+export const selectIsAuthenticated = (s: AuthState) => s.isAuthenticated;

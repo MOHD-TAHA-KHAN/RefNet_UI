@@ -9,16 +9,19 @@ export interface SignupData {
   name: string;
   email: string;
   password: string;
-  profile?: string;
+  role?: 'fresher' | 'professional';
+}
+
+export interface AuthUser {
+  id: string;
+  name: string;
+  email: string;
+  role?: string;
+  profilePicture?: string;
 }
 
 export interface AuthResponse {
-  user: {
-    id: string;
-    name: string;
-    email: string;
-    profile?: string;
-  };
+  user: AuthUser;
   token: string;
 }
 
@@ -29,16 +32,20 @@ export const authService = {
   },
 
   async signup(userData: SignupData): Promise<AuthResponse> {
-    const response = await api.post('/auth/signup', userData);
+    const response = await api.post('/auth/register', userData);
     return response.data;
   },
 
   async logout(): Promise<void> {
-    await api.post('/auth/logout');
+    try {
+      await api.post('/auth/logout');
+    } catch {
+      // ignore logout errors
+    }
   },
 
-  async refreshToken(): Promise<AuthResponse> {
-    const response = await api.post('/auth/refresh');
+  async getMe(): Promise<AuthUser> {
+    const response = await api.get('/auth/me');
     return response.data;
-  }
+  },
 };

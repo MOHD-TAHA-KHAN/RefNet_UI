@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const Layout = ({ children, showNavigation = true }: LayoutProps) => {
   return (
-    <div className="layout">
+    <div className={`layout ${showNavigation ? 'layout-with-nav' : 'layout-full'}`}>
       {showNavigation && <Navigation />}
       <main className={`layout-main ${showNavigation ? 'with-nav' : 'full-width'}`}>
         {children}

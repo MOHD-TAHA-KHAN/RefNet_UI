@@ -1,17 +1,61 @@
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #root {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Fix Pixso scroll-container (landing page) ─────────── */
+.scroll-container {
+  height: auto !important;
+  min-height: 100%;
   width: 100%;
+  overflow: visible !important;
+}
+
+/* Fix Pixso fixed-height root frames */
+[class^="Pixso-frame-2_37"],
+[class^="Pixso-frame-2_371"],
+[class^="Pixso-frame-2_1259"],
+[class^="Pixso-frame-2_985"],
+[class^="Pixso-frame-2_890"],
+[class^="Pixso-frame-2_669"],
+[class^="Pixso-frame-2_562"],
+[class^="Pixso-frame-2_209"] {
+  height: auto !important;
+  min-height: 900px;
+  overflow: visible !important;
+}
+
+/* ── App shell pages fill full viewport ────────────────── */
+.app-shell {
+  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
-  position: relative;
+}
+
+.app-main {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* ── Auth / full-screen pages ──────────────────────────── */
+.auth-fullscreen {
+  min-height: 100vh;
+  display: flex;
 }

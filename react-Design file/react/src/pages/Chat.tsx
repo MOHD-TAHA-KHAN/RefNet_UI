@@ -1,569 +1,174 @@
-import "@/styles/Frame2791.css";
-const Frame2791 = () => {
-    return (
-        <div className="scroll-container">
-            <div id="2_791" className="Pixso-frame-2_791">
-                <div id="2_792" className="Pixso-frame-2_792">
-                    <div className="frame-content-2_792">
-                        <div id="2_793" className="Pixso-frame-2_793">
-                            <div className="frame-content-2_793">
-                                <div id="2_794" className="Pixso-frame-2_794">
-                                    <div className="frame-content-2_794">
-                                        <div
-                                            id="2_795"
-                                            className="Pixso-frame-2_795"
-                                        >
-                                            <div className="frame-content-2_795">
-                                                <div
-                                                    id="2_796"
-                                                    className="Pixso-frame-2_796"
-                                                >
-                                                    <div
-                                                        id="2_797"
-                                                        className="stroke-wrapper-2_797"
-                                                    >
-                                                        <div className="Pixso-rectangle-2_797"></div>
-                                                        <div className="stroke-2_797"></div>
-                                                    </div>
-                                                    <div
-                                                        id="2_798"
-                                                        className="stroke-wrapper-2_798"
-                                                    >
-                                                        <div className="Pixso-rectangle-2_798"></div>
-                                                        <div className="stroke-2_798"></div>
-                                                    </div>
-                                                    <div
-                                                        id="2_799"
-                                                        className="stroke-wrapper-2_799"
-                                                    >
-                                                        <div className="Pixso-rectangle-2_799"></div>
-                                                        <div className="stroke-2_799"></div>
-                                                    </div>
-                                                    <div
-                                                        id="2_800"
-                                                        className="Pixso-vector-2_800"
-                                                    ></div>
-                                                    <div
-                                                        id="2_801"
-                                                        className="Pixso-vector-2_801"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p
-                                            id="2_802"
-                                            className="Pixso-paragraph-2_802"
-                                        >
-                                            {"RefNet"}
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="2_803" className="Pixso-frame-2_803">
-                            <div className="frame-content-2_803">
-                                <div id="2_804" className="Pixso-frame-2_804">
-                                    <div className="frame-content-2_804">
-                                        <div
-                                            id="2_805"
-                                            className="Pixso-frame-2_805"
-                                        >
-                                            <div
-                                                id="2_806"
-                                                className="stroke-wrapper-2_806"
-                                            >
-                                                <div className="Pixso-rectangle-2_806"></div>
-                                                <div className="stroke-2_806"></div>
-                                            </div>
-                                            <div
-                                                id="2_807"
-                                                className="stroke-wrapper-2_807"
-                                            >
-                                                <div className="Pixso-rectangle-2_807"></div>
-                                                <div className="stroke-2_807"></div>
-                                            </div>
-                                            <div
-                                                id="2_808"
-                                                className="stroke-wrapper-2_808"
-                                            >
-                                                <div className="Pixso-rectangle-2_808"></div>
-                                                <div className="stroke-2_808"></div>
-                                            </div>
-                                            <div
-                                                id="2_809"
-                                                className="stroke-wrapper-2_809"
-                                            >
-                                                <div className="Pixso-rectangle-2_809"></div>
-                                                <div className="stroke-2_809"></div>
-                                            </div>
-                                        </div>
-                                        <p
-                                            id="2_810"
-                                            className="Pixso-paragraph-2_810"
-                                        >
-                                            {"Dashboard"}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="2_811" className="Pixso-frame-2_811">
-                                    <div className="frame-content-2_811">
-                                        <div
-                                            id="2_812"
-                                            className="Pixso-vector-2_812"
-                                        ></div>
-                                        <p
-                                            id="2_815"
-                                            className="Pixso-paragraph-2_815"
-                                        >
-                                            {"My Referrals"}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="2_816" className="Pixso-frame-2_816">
-                                    <div className="frame-content-2_816">
-                                        <div
-                                            id="2_817"
-                                            className="Pixso-vector-2_817"
-                                        ></div>
-                                        <p
-                                            id="2_819"
-                                            className="Pixso-paragraph-2_819"
-                                        >
-                                            {"Messages"}
-                                        </p>
-                                        <div
-                                            id="2_820"
-                                            className="Pixso-frame-2_820"
-                                        >
-                                            <div className="frame-content-2_820">
-                                                <p
-                                                    id="2_821"
-                                                    className="Pixso-paragraph-2_821"
-                                                >
-                                                    {"2"}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="2_822" className="Pixso-frame-2_822">
-                    <div className="frame-content-2_822">
-                        <div id="2_823" className="stroke-wrapper-2_823">
-                            <div className="Pixso-frame-2_823">
-                                <div className="frame-content-2_823">
-                                    <div
-                                        id="2_824"
-                                        className="Pixso-frame-2_824"
-                                    >
-                                        <div className="frame-content-2_824">
-                                            <p
-                                                id="2_825"
-                                                className="Pixso-paragraph-2_825"
-                                            >
-                                                {"Messages"}
-                                            </p>
-                                            <div
-                                                id="2_826"
-                                                className="stroke-wrapper-2_826"
-                                            >
-                                                <div className="Pixso-frame-2_826">
-                                                    <div className="frame-content-2_826">
-                                                        <div
-                                                            id="2_827"
-                                                            className="Pixso-vector-2_827"
-                                                        ></div>
-                                                        <p
-                                                            id="2_830"
-                                                            className="Pixso-paragraph-2_830"
-                                                        >
-                                                            {
-                                                                "Search conversations…"
-                                                            }
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div className="stroke-2_826"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        id="2_831"
-                                        className="Pixso-frame-2_831"
-                                    ></div>
-                                    <div
-                                        id="2_832"
-                                        className="Pixso-frame-2_832"
-                                    >
-                                        <div className="frame-content-2_832">
-                                            <div
-                                                id="2_833"
-                                                className="Pixso-vector-2_833"
-                                            ></div>
-                                            <div
-                                                id="2_834"
-                                                className="Pixso-frame-2_834"
-                                            >
-                                                <div className="frame-content-2_834">
-                                                    <div
-                                                        id="2_835"
-                                                        className="Pixso-frame-2_835"
-                                                    >
-                                                        <div className="frame-content-2_835">
-                                                            <p
-                                                                id="2_836"
-                                                                className="Pixso-paragraph-2_836"
-                                                            >
-                                                                {"Rahul Sharma"}
-                                                            </p>
-                                                            <p
-                                                                id="2_837"
-                                                                className="Pixso-paragraph-2_837"
-                                                            >
-                                                                {"2m ago"}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <p
-                                                        id="2_838"
-                                                        className="Pixso-paragraph-2_838"
-                                                    >
-                                                        {
-                                                            "Great! I'll forward your profile today."
-                                                        }
-                                                    </p>
-                                                    <p
-                                                        id="2_839"
-                                                        className="Pixso-paragraph-2_839"
-                                                    >
-                                                        {
-                                                            "SDE @ Google · Re: SDE-II role"
-                                                        }
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div
-                                                id="2_840"
-                                                className="Pixso-frame-2_840"
-                                            ></div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        id="2_841"
-                                        className="Pixso-frame-2_841"
-                                    >
-                                        <div className="frame-content-2_841">
-                                            <div
-                                                id="2_842"
-                                                className="Pixso-vector-2_842"
-                                            ></div>
-                                            <div
-                                                id="2_843"
-                                                className="Pixso-frame-2_843"
-                                            >
-                                                <div className="frame-content-2_843">
-                                                    <div
-                                                        id="2_844"
-                                                        className="Pixso-frame-2_844"
-                                                    >
-                                                        <div className="frame-content-2_844">
-                                                            <p
-                                                                id="2_845"
-                                                                className="Pixso-paragraph-2_845"
-                                                            >
-                                                                {"Ananya Singh"}
-                                                            </p>
-                                                            <p
-                                                                id="2_846"
-                                                                className="Pixso-paragraph-2_846"
-                                                            >
-                                                                {"1h ago"}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <p
-                                                        id="2_847"
-                                                        className="Pixso-paragraph-2_847"
-                                                    >
-                                                        {
-                                                            "Can you share your updated resume?"
-                                                        }
-                                                    </p>
-                                                    <p
-                                                        id="2_848"
-                                                        className="Pixso-paragraph-2_848"
-                                                    >
-                                                        {
-                                                            "SDE @ Flipkart · Re: Frontend role"
-                                                        }
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        id="2_849"
-                                        className="Pixso-frame-2_849"
-                                    >
-                                        <div className="frame-content-2_849">
-                                            <div
-                                                id="2_850"
-                                                className="Pixso-frame-2_850"
-                                            ></div>
-                                            <div
-                                                id="2_851"
-                                                className="Pixso-frame-2_851"
-                                            >
-                                                <div className="frame-content-2_851">
-                                                    <div
-                                                        id="2_852"
-                                                        className="Pixso-frame-2_852"
-                                                    >
-                                                        <div className="frame-content-2_852">
-                                                            <p
-                                                                id="2_853"
-                                                                className="Pixso-paragraph-2_853"
-                                                            >
-                                                                {"Vikram Nair"}
-                                                            </p>
-                                                            <p
-                                                                id="2_854"
-                                                                className="Pixso-paragraph-2_854"
-                                                            >
-                                                                {"3d ago"}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <p
-                                                        id="2_855"
-                                                        className="Pixso-paragraph-2_855"
-                                                    >
-                                                        {
-                                                            "I've submitted your profile. All the best!"
-                                                        }
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="stroke-2_823"></div>
-                        </div>
-                        <div id="2_856" className="Pixso-frame-2_856">
-                            <div className="frame-content-2_856">
-                                <div
-                                    id="2_857"
-                                    className="stroke-wrapper-2_857"
-                                >
-                                    <div className="Pixso-frame-2_857">
-                                        <div className="frame-content-2_857">
-                                            <div
-                                                id="2_858"
-                                                className="Pixso-vector-2_858"
-                                            ></div>
-                                            <div
-                                                id="2_859"
-                                                className="Pixso-frame-2_859"
-                                            >
-                                                <div className="frame-content-2_859">
-                                                    <p
-                                                        id="2_860"
-                                                        className="Pixso-paragraph-2_860"
-                                                    >
-                                                        {"Rahul Sharma"}
-                                                    </p>
-                                                    <p
-                                                        id="2_861"
-                                                        className="Pixso-paragraph-2_861"
-                                                    >
-                                                        {
-                                                            "SDE-3 @ Google · Active now"
-                                                        }
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div
-                                                id="2_862"
-                                                className="Pixso-frame-2_862"
-                                            >
-                                                <div
-                                                    id="2_863"
-                                                    className="Pixso-frame-2_863"
-                                                >
-                                                    <p
-                                                        id="2_864"
-                                                        className="Pixso-paragraph-2_864"
-                                                    >
-                                                        {"Re: SDE-II @ Google"}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="stroke-2_857"></div>
-                                </div>
-                                <div id="2_865" className="Pixso-frame-2_865">
-                                    <div className="frame-content-2_865">
-                                        <div
-                                            id="2_866"
-                                            className="Pixso-frame-2_866"
-                                        >
-                                            <div className="frame-content-2_866">
-                                                <div
-                                                    id="2_867"
-                                                    className="Pixso-vector-2_867"
-                                                ></div>
-                                                <div
-                                                    id="2_868"
-                                                    className="stroke-wrapper-2_868"
-                                                >
-                                                    <div className="Pixso-frame-2_868">
-                                                        <div className="frame-content-2_868">
-                                                            <p
-                                                                id="2_869"
-                                                                className="Pixso-paragraph-2_869"
-                                                            >
-                                                                {
-                                                                    "Hi Priya! I reviewed your profile and resume. Your background in DSA and system design is quite strong."
-                                                                }
-                                                            </p>
-                                                            <p
-                                                                id="2_870"
-                                                                className="Pixso-paragraph-2_870"
-                                                            >
-                                                                {"11:42 AM"}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="stroke-2_868"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="2_871"
-                                            className="Pixso-frame-2_871"
-                                        >
-                                            <div className="frame-content-2_871">
-                                                <div
-                                                    id="2_872"
-                                                    className="Pixso-frame-2_872"
-                                                >
-                                                    <div className="frame-content-2_872">
-                                                        <p
-                                                            id="2_873"
-                                                            className="Pixso-paragraph-2_873"
-                                                        >
-                                                            {
-                                                                "Thank you so much Rahul! I've worked on a few distributed systems projects during my final year. Would really appreciate the referral."
-                                                            }
-                                                        </p>
-                                                        <p
-                                                            id="2_874"
-                                                            className="Pixso-paragraph-2_874"
-                                                        >
-                                                            {"11:44 AM"}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="2_875"
-                                            className="Pixso-frame-2_875"
-                                        >
-                                            <div className="frame-content-2_875">
-                                                <div
-                                                    id="2_876"
-                                                    className="Pixso-vector-2_876"
-                                                ></div>
-                                                <div
-                                                    id="2_877"
-                                                    className="stroke-wrapper-2_877"
-                                                >
-                                                    <div className="Pixso-frame-2_877">
-                                                        <div className="frame-content-2_877">
-                                                            <p
-                                                                id="2_878"
-                                                                className="Pixso-paragraph-2_878"
-                                                            >
-                                                                {
-                                                                    "Great! I'll forward your profile today. All the best!"
-                                                                }
-                                                            </p>
-                                                            <p
-                                                                id="2_879"
-                                                                className="Pixso-paragraph-2_879"
-                                                            >
-                                                                {"2:18 PM"}
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className="stroke-2_877"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    id="2_880"
-                                    className="stroke-wrapper-2_880"
-                                >
-                                    <div className="Pixso-frame-2_880">
-                                        <div className="frame-content-2_880">
-                                            <div
-                                                id="2_881"
-                                                className="Pixso-frame-2_881"
-                                            >
-                                                <div className="frame-content-2_881">
-                                                    <div
-                                                        id="2_882"
-                                                        className="Pixso-vector-2_882"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                id="2_884"
-                                                className="stroke-wrapper-2_884"
-                                            >
-                                                <div className="Pixso-frame-2_884">
-                                                    <div className="frame-content-2_884">
-                                                        <p
-                                                            id="2_885"
-                                                            className="Pixso-paragraph-2_885"
-                                                        >
-                                                            {
-                                                                "Type your message…"
-                                                            }
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div className="stroke-2_884"></div>
-                                            </div>
-                                            <div
-                                                id="2_886"
-                                                className="Pixso-frame-2_886"
-                                            >
-                                                <div className="frame-content-2_886">
-                                                    <div
-                                                        id="2_887"
-                                                        className="Pixso-vector-2_887"
-                                                    ></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="stroke-2_880"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
+import { useState } from 'react';
+import { useNavigate } from 'react-router';
+import AppSidebar from '../components/AppSidebar';
+import '../styles/design-system.css';
+
+const DashIcon  = () => <svg viewBox="0 0 16 16" className="sidebar-nav-icon" fill="currentColor"><rect x="1" y="1" width="6" height="6" rx="1"/><rect x="9" y="1" width="6" height="6" rx="1"/><rect x="1" y="9" width="6" height="6" rx="1"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg>;
+const RefIcon   = () => <svg viewBox="0 0 16 16" className="sidebar-nav-icon" fill="currentColor"><path d="M8 1a3 3 0 1 0 0 6A3 3 0 0 0 8 1zM2 13c0-2.8 2.7-5 6-5s6 2.2 6 5H2z"/></svg>;
+const MsgIcon   = () => <svg viewBox="0 0 16 16" className="sidebar-nav-icon" fill="currentColor"><path d="M2 2h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H5l-3 2V3a1 1 0 0 1 1-1z"/></svg>;
+
+const NAV = [
+  { path: '/dashboard', label: 'Dashboard',   icon: <DashIcon /> },
+  { path: '/referrals', label: 'My Referrals', icon: <RefIcon /> },
+  { path: '/chat',      label: 'Messages',     icon: <MsgIcon />, badge: 2 },
+];
+
+const CONVERSATIONS = [
+  { id: '1', name: 'Rahul Sharma',  role: 'SDE @ Google',   context: 'Re: SDE-II role',    lastMsg: "Great! I'll forward your profile today.", time: '2m ago',  unread: true  },
+  { id: '2', name: 'Ananya Singh',  role: 'SDE @ Flipkart', context: 'Re: Frontend role',  lastMsg: 'Can you share your updated resume?',      time: '1h ago',  unread: false },
+  { id: '3', name: 'Vikram Nair',   role: 'SDE @ Google',   context: 'Re: SDE-II role',    lastMsg: "I've submitted your profile. All the best!", time: '3d ago', unread: false },
+];
+
+const MESSAGES: Record<string, { id: string; text: string; sender: 'them' | 'me'; time: string }[]> = {
+  '1': [
+    { id: 'm1', text: "Hi Priya! I reviewed your profile and resume. Your background in DSA and system design is quite strong.", sender: 'them', time: '11:42 AM' },
+    { id: 'm2', text: "Thank you so much Rahul! I've worked on a few distributed systems projects during my final year. Would really appreciate the referral.", sender: 'me', time: '11:44 AM' },
+    { id: 'm3', text: "Great! I'll forward your profile today. All the best!", sender: 'them', time: '2:18 PM' },
+  ],
+  '2': [
+    { id: 'm1', text: 'Hi! Can you share your updated resume?', sender: 'them', time: '10:00 AM' },
+  ],
+  '3': [
+    { id: 'm1', text: "I've submitted your profile. All the best!", sender: 'them', time: 'Mon' },
+  ],
 };
-export default Frame2791;
+
+const Chat = () => {
+  const [activeId, setActiveId] = useState('1');
+  const [input, setInput] = useState('');
+  const [msgs, setMsgs] = useState(MESSAGES);
+  const [search, setSearch] = useState('');
+
+  const active = CONVERSATIONS.find(c => c.id === activeId)!;
+  const currentMsgs = msgs[activeId] ?? [];
+
+  const sendMsg = () => {
+    if (!input.trim()) return;
+    const newMsg = { id: Date.now().toString(), text: input.trim(), sender: 'me' as const, time: new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }) };
+    setMsgs(prev => ({ ...prev, [activeId]: [...(prev[activeId] ?? []), newMsg] }));
+    setInput('');
+  };
+
+  const filtered = CONVERSATIONS.filter(c =>
+    !search || c.name.toLowerCase().includes(search.toLowerCase()) || c.context.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div className="app-shell">
+      <AppSidebar items={NAV} />
+
+      <div className="app-main" style={{ flexDirection: 'row', overflow: 'hidden' }}>
+        {/* Conversation list */}
+        <div style={{ width: 280, borderRight: '1px solid var(--border)', display: 'flex', flexDirection: 'column', background: '#fff', flexShrink: 0 }}>
+          <div style={{ padding: '16px 14px', borderBottom: '1px solid var(--border)' }}>
+            <p style={{ margin: '0 0 10px', fontSize: 16, fontWeight: 700 }}>Messages</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: '#f5f7ff', border: '1px solid var(--border)', borderRadius: 8, padding: '7px 12px' }}>
+              <span style={{ color: 'var(--text-muted)', fontSize: 14 }}>🔍</span>
+              <input
+                type="text"
+                placeholder="Search conversations..."
+                value={search}
+                onChange={e => setSearch(e.target.value)}
+                style={{ border: 'none', background: 'none', outline: 'none', fontSize: 13, flex: 1, fontFamily: 'var(--font)' }}
+              />
+            </div>
+          </div>
+
+          <div style={{ flex: 1, overflowY: 'auto' }}>
+            {filtered.map(conv => (
+              <div
+                key={conv.id}
+                onClick={() => setActiveId(conv.id)}
+                style={{
+                  display: 'flex', alignItems: 'flex-start', gap: 12, padding: '14px',
+                  borderBottom: '1px solid var(--border)', cursor: 'pointer',
+                  background: activeId === conv.id ? '#f0f4ff' : '#fff',
+                  borderLeft: activeId === conv.id ? '3px solid var(--accent)' : '3px solid transparent',
+                }}
+              >
+                <div style={{ width: 40, height: 40, borderRadius: '50%', background: '#e0e7ff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 15, color: '#4f6ef7', flexShrink: 0 }}>
+                  {conv.name[0]}
+                </div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <p style={{ margin: 0, fontSize: 13, fontWeight: 600 }}>{conv.name}</p>
+                    <span style={{ fontSize: 11, color: 'var(--text-muted)' }}>{conv.time}</span>
+                  </div>
+                  <p style={{ margin: '2px 0 0', fontSize: 12, color: 'var(--text-secondary)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{conv.lastMsg}</p>
+                  <p style={{ margin: '2px 0 0', fontSize: 11, color: 'var(--text-muted)' }}>{conv.role} · {conv.context}</p>
+                </div>
+                {conv.unread && <div style={{ width: 8, height: 8, borderRadius: '50%', background: 'var(--accent)', marginTop: 6, flexShrink: 0 }} />}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Chat window */}
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', background: '#f8f9fc' }}>
+          {/* Chat header */}
+          <div style={{ padding: '14px 20px', background: '#fff', borderBottom: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+              <div style={{ width: 38, height: 38, borderRadius: '50%', background: '#e0e7ff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 15, color: '#4f6ef7' }}>
+                {active.name[0]}
+              </div>
+              <div>
+                <p style={{ margin: 0, fontSize: 14, fontWeight: 700 }}>{active.name}</p>
+                <p style={{ margin: 0, fontSize: 12, color: '#10b981' }}>{active.role} · Active now</p>
+              </div>
+            </div>
+            <span style={{ fontSize: 12, background: '#f0f4ff', color: 'var(--accent)', borderRadius: 6, padding: '4px 10px', fontWeight: 500 }}>
+              {active.context}
+            </span>
+          </div>
+
+          {/* Messages */}
+          <div style={{ flex: 1, overflowY: 'auto', padding: '20px', display: 'flex', flexDirection: 'column', gap: 16 }}>
+            {currentMsgs.map(msg => (
+              <div key={msg.id} style={{ display: 'flex', justifyContent: msg.sender === 'me' ? 'flex-end' : 'flex-start', gap: 10, alignItems: 'flex-end' }}>
+                {msg.sender === 'them' && (
+                  <div style={{ width: 32, height: 32, borderRadius: '50%', background: '#e0e7ff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 13, color: '#4f6ef7', flexShrink: 0 }}>
+                    {active.name[0]}
+                  </div>
+                )}
+                <div style={{ maxWidth: '60%' }}>
+                  <div style={{
+                    padding: '12px 16px', borderRadius: msg.sender === 'me' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                    background: msg.sender === 'me' ? 'var(--accent)' : '#fff',
+                    color: msg.sender === 'me' ? '#fff' : 'var(--text-primary)',
+                    fontSize: 14, lineHeight: 1.5,
+                    boxShadow: '0 1px 4px rgba(0,0,0,0.06)',
+                  }}>
+                    {msg.text}
+                  </div>
+                  <p style={{ margin: '4px 0 0', fontSize: 11, color: 'var(--text-muted)', textAlign: msg.sender === 'me' ? 'right' : 'left' }}>{msg.time}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Input */}
+          <div style={{ padding: '14px 20px', background: '#fff', borderTop: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: 12 }}>
+            <button className="btn btn-outline btn-sm" style={{ padding: '8px 10px' }}>📎</button>
+            <input
+              type="text"
+              placeholder="Type your message..."
+              value={input}
+              onChange={e => setInput(e.target.value)}
+              onKeyDown={e => e.key === 'Enter' && sendMsg()}
+              style={{ flex: 1, border: '1px solid var(--border)', borderRadius: 24, padding: '10px 16px', fontSize: 14, outline: 'none', fontFamily: 'var(--font)', background: '#f8f9fc' }}
+            />
+            <button
+              className="btn btn-primary"
+              style={{ width: 40, height: 40, borderRadius: '50%', padding: 0, justifyContent: 'center' }}
+              onClick={sendMsg}
+            >
+              ✈
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Chat;

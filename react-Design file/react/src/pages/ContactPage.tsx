@@ -1,297 +1,101 @@
-import "@/styles/Frame2148.css";
-const Frame2148 = () => {
+import { useNavigate } from "react-router";
+
+const ContactPage = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className="scroll-container">
-            <div id="2_148" className="Pixso-frame-2_148">
-                <div id="2_149" className="Pixso-frame-2_149">
-                    <div className="frame-content-2_149">
-                        <p id="2_150" className="Pixso-paragraph-2_150">
-                            {"RefNet"}
-                        </p>
-                        <p id="2_151" className="Pixso-paragraph-2_151">
-                            {
-                                "India's #1 platform\nfor referral-powered hiring."
-                            }
-                        </p>
-                        <p id="2_152" className="Pixso-paragraph-2_152">
-                            {
-                                "Join 12,000+ freshers who landed jobs at Google, Flipkart, TCS and 500+ top companies through genuine referrals."
-                            }
-                        </p>
-                        <div id="2_153" className="Pixso-frame-2_153">
-                            <div id="2_154" className="Pixso-frame-2_154">
-                                <div id="2_155" className="Pixso-frame-2_155">
-                                    <div className="frame-content-2_155">
-                                        <div
-                                            id="2_156"
-                                            className="Pixso-vector-2_156"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <p id="2_158" className="Pixso-paragraph-2_158">
-                                    {"Direct referrals from verified employees"}
-                                </p>
-                            </div>
-                            <div id="2_159" className="Pixso-frame-2_159">
-                                <div id="2_160" className="Pixso-frame-2_160">
-                                    <div className="frame-content-2_160">
-                                        <div
-                                            id="2_161"
-                                            className="Pixso-vector-2_161"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <p id="2_163" className="Pixso-paragraph-2_163">
-                                    {
-                                        "Real-time status tracking (Pending → Referred)"
-                                    }
-                                </p>
-                            </div>
-                            <div id="2_164" className="Pixso-frame-2_164">
-                                <div id="2_165" className="Pixso-frame-2_165">
-                                    <div className="frame-content-2_165">
-                                        <div
-                                            id="2_166"
-                                            className="Pixso-vector-2_166"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <p id="2_168" className="Pixso-paragraph-2_168">
-                                    {"In-app chat with referrers"}
-                                </p>
-                            </div>
+        <div style={{ minHeight: '100vh', background: '#fff', fontFamily: 'Inter, sans-serif' }}>
+            {/* Navbar */}
+            <nav style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 64px', height: 72, borderBottom: '1px solid #eee', background: '#fff', position: 'sticky', top: 0, zIndex: 100 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 8, cursor: 'pointer' }} onClick={() => navigate('/')}>
+                    <div style={{ width: 36, height: 36, borderRadius: 10, background: '#6c63ff', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                            <div style={{ width: 14, height: 2, background: '#fff', borderRadius: 1 }}></div>
+                            <div style={{ width: 10, height: 2, background: '#fff', borderRadius: 1 }}></div>
+                            <div style={{ width: 7, height: 2, background: '#fff', borderRadius: 1 }}></div>
                         </div>
+                    </div>
+                    <span style={{ fontSize: 22, fontWeight: 700, color: '#111' }}>RefNet</span>
+                </div>
+                <div style={{ display: 'flex', gap: 12 }}>
+                    <button onClick={() => navigate('/login')} style={{ padding: '8px 20px', borderRadius: 10, border: '1.5px solid #ddd', background: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 14 }}>Log In</button>
+                    <button onClick={() => navigate('/signup')} style={{ padding: '8px 20px', borderRadius: 10, border: 'none', background: '#6c63ff', color: '#fff', fontWeight: 600, cursor: 'pointer', fontSize: 14 }}>Get Referred Free</button>
+                </div>
+            </nav>
+
+            {/* Two-column layout */}
+            <div style={{ display: 'flex', minHeight: 'calc(100vh - 72px)' }}>
+                {/* Left: brand pitch */}
+                <div style={{ flex: 1.2, background: 'linear-gradient(135deg, #6c63ff 0%, #4f46e5 100%)', padding: '64px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24 }}>
+                    <h1 style={{ fontSize: 36, fontWeight: 800, color: '#fff', lineHeight: 1.2, margin: 0 }}>
+                        India's #1 platform<br />for referral-powered hiring.
+                    </h1>
+                    <p style={{ fontSize: 16, color: 'rgba(255,255,255,0.8)', lineHeight: 1.6, margin: 0, maxWidth: 400 }}>
+                        Join 12,000+ freshers who landed jobs at Google, Flipkart, TCS and 500+ top companies through genuine referrals.
+                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+                        {[
+                            'Direct referrals from verified employees',
+                            'Real-time status tracking (Pending → Referred)',
+                            'In-app chat with referrers',
+                        ].map(item => (
+                            <div key={item} style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                                <div style={{ width: 20, height: 20, borderRadius: 10, background: 'rgba(255,255,255,0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 11, color: '#fff', flexShrink: 0 }}>✓</div>
+                                <span style={{ fontSize: 14, color: 'rgba(255,255,255,0.9)' }}>{item}</span>
+                            </div>
+                        ))}
+                    </div>
+                    <div style={{ display: 'flex', gap: 24, marginTop: 8 }}>
+                        {[{ v: '12,400+', l: 'Freshers Placed' }, { v: '3,800+', l: 'Professionals' }, { v: '94%', l: 'Response Rate' }].map(s => (
+                            <div key={s.l}>
+                                <p style={{ fontSize: 22, fontWeight: 800, color: '#fff', margin: 0 }}>{s.v}</p>
+                                <p style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', margin: '2px 0 0' }}>{s.l}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div id="2_169" className="Pixso-frame-2_169">
-                    <div className="frame-content-2_169">
-                        <div id="2_170" className="Pixso-frame-2_170">
-                            <div className="frame-content-2_170">
-                                <p id="2_171" className="Pixso-paragraph-2_171">
-                                    {"Welcome back 👋"}
-                                </p>
-                                <p id="2_172" className="Pixso-paragraph-2_172">
-                                    {"Sign in to your RefNet account"}
-                                </p>
-                                <div id="2_173" className="Pixso-frame-2_173">
-                                    <div className="frame-content-2_173">
-                                        <div
-                                            id="2_174"
-                                            className="Pixso-frame-2_174"
-                                        >
-                                            <div className="frame-content-2_174">
-                                                <p
-                                                    id="2_175"
-                                                    className="Pixso-paragraph-2_175"
-                                                >
-                                                    {"Fresher"}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="2_176"
-                                            className="Pixso-frame-2_176"
-                                        >
-                                            <div className="frame-content-2_176">
-                                                <p
-                                                    id="2_177"
-                                                    className="Pixso-paragraph-2_177"
-                                                >
-                                                    {"Professional"}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="2_178"
-                                            className="Pixso-frame-2_178"
-                                        >
-                                            <div className="frame-content-2_178">
-                                                <p
-                                                    id="2_179"
-                                                    className="Pixso-paragraph-2_179"
-                                                >
-                                                    {"HR / Company"}
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    id="2_180"
-                                    className="stroke-wrapper-2_180"
-                                >
-                                    <div className="Pixso-frame-2_180">
-                                        <div className="frame-content-2_180">
-                                            <div
-                                                id="2_181"
-                                                className="Pixso-frame-2_181"
-                                            >
-                                                <div className="frame-content-2_181">
-                                                    <p
-                                                        id="2_182"
-                                                        className="Pixso-paragraph-2_182"
-                                                    >
-                                                        {"G"}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <p
-                                                id="2_183"
-                                                className="Pixso-paragraph-2_183"
-                                            >
-                                                {"Continue with Google"}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="stroke-2_180"></div>
-                                </div>
-                                <div id="2_184" className="Pixso-frame-2_184">
-                                    <div className="frame-content-2_184">
-                                        <div
-                                            id="2_185"
-                                            className="Pixso-frame-2_185"
-                                        ></div>
-                                        <p
-                                            id="2_186"
-                                            className="Pixso-paragraph-2_186"
-                                        >
-                                            {"or"}
-                                        </p>
-                                        <div
-                                            id="2_187"
-                                            className="Pixso-frame-2_187"
-                                        ></div>
-                                    </div>
-                                </div>
-                                <div id="2_188" className="Pixso-frame-2_188">
-                                    <div className="frame-content-2_188">
-                                        <p
-                                            id="2_189"
-                                            className="Pixso-paragraph-2_189"
-                                        >
-                                            {"Email address"}
-                                        </p>
-                                        <div
-                                            id="2_190"
-                                            className="stroke-wrapper-2_190"
-                                        >
-                                            <div className="Pixso-frame-2_190">
-                                                <div className="frame-content-2_190">
-                                                    <div
-                                                        id="2_191"
-                                                        className="Pixso-frame-2_191"
-                                                    >
-                                                        <div
-                                                            id="2_192"
-                                                            className="Pixso-vector-2_192"
-                                                        ></div>
-                                                        <div
-                                                            id="2_193"
-                                                            className="stroke-wrapper-2_193"
-                                                        >
-                                                            <div className="Pixso-rectangle-2_193"></div>
-                                                            <div className="stroke-2_193"></div>
-                                                        </div>
-                                                    </div>
-                                                    <p
-                                                        id="2_194"
-                                                        className="Pixso-paragraph-2_194"
-                                                    >
-                                                        {"you@example.com"}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="stroke-2_190"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="2_195" className="Pixso-frame-2_195">
-                                    <div className="frame-content-2_195">
-                                        <div
-                                            id="2_196"
-                                            className="Pixso-frame-2_196"
-                                        >
-                                            <div className="frame-content-2_196">
-                                                <p
-                                                    id="2_197"
-                                                    className="Pixso-paragraph-2_197"
-                                                >
-                                                    {"Password"}
-                                                </p>
-                                                <p
-                                                    id="2_198"
-                                                    className="Pixso-paragraph-2_198"
-                                                >
-                                                    {"Forgot password?"}
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            id="2_199"
-                                            className="stroke-wrapper-2_199"
-                                        >
-                                            <div className="Pixso-frame-2_199">
-                                                <div className="frame-content-2_199">
-                                                    <div
-                                                        id="2_200"
-                                                        className="Pixso-frame-2_200"
-                                                    >
-                                                        <div
-                                                            id="2_201"
-                                                            className="stroke-wrapper-2_201"
-                                                        >
-                                                            <div className="Pixso-rectangle-2_201"></div>
-                                                            <div className="stroke-2_201"></div>
-                                                        </div>
-                                                        <div
-                                                            id="2_202"
-                                                            className="Pixso-vector-2_202"
-                                                        ></div>
-                                                    </div>
-                                                    <p
-                                                        id="2_203"
-                                                        className="Pixso-paragraph-2_203"
-                                                    >
-                                                        {"••••••••"}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div className="stroke-2_199"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="2_204" className="Pixso-frame-2_204">
-                                    <div className="frame-content-2_204">
-                                        <p
-                                            id="2_205"
-                                            className="Pixso-paragraph-2_205"
-                                        >
-                                            {"Sign in to RefNet"}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div id="2_206" className="Pixso-frame-2_206">
-                                    <div className="frame-content-2_206">
-                                        <p
-                                            id="2_207"
-                                            className="Pixso-paragraph-2_207"
-                                        >
-                                            {"Don't have an account?"}
-                                        </p>
-                                        <p
-                                            id="2_208"
-                                            className="Pixso-paragraph-2_208"
-                                        >
-                                            {"Sign up free"}
-                                        </p>
-                                    </div>
-                                </div>
+
+                {/* Right: contact / get started form */}
+                <div style={{ flex: 1, padding: '64px 56px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 24 }}>
+                    <h2 style={{ fontSize: 28, fontWeight: 700, color: '#111', margin: 0 }}>Get in touch</h2>
+                    <p style={{ fontSize: 14, color: '#888', margin: 0 }}>Interested in RefNet for your company? We'd love to hear from you.</p>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+                        {[
+                            { label: 'Full Name', placeholder: 'Priya Mehta', type: 'text' },
+                            { label: 'Work Email', placeholder: 'hr@company.com', type: 'email' },
+                            { label: 'Company', placeholder: 'Google India', type: 'text' },
+                        ].map(f => (
+                            <div key={f.label} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                                <label style={{ fontSize: 13, fontWeight: 500, color: '#555' }}>{f.label}</label>
+                                <input
+                                    type={f.type}
+                                    placeholder={f.placeholder}
+                                    style={{ padding: '10px 14px', borderRadius: 8, border: '1px solid #ddd', fontSize: 14, outline: 'none', fontFamily: 'inherit' }}
+                                />
                             </div>
+                        ))}
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                            <label style={{ fontSize: 13, fontWeight: 500, color: '#555' }}>Message</label>
+                            <textarea
+                                placeholder="Tell us how you'd like to use RefNet…"
+                                rows={4}
+                                style={{ padding: '10px 14px', borderRadius: 8, border: '1px solid #ddd', fontSize: 14, outline: 'none', fontFamily: 'inherit', resize: 'vertical' }}
+                            />
                         </div>
+                        <button style={{ padding: '12px', borderRadius: 10, border: 'none', background: '#6c63ff', color: '#fff', fontWeight: 700, fontSize: 15, cursor: 'pointer', fontFamily: 'inherit' }}>
+                            Send Message
+                        </button>
                     </div>
+
+                    <p style={{ fontSize: 13, color: '#888', textAlign: 'center', margin: 0 }}>
+                        Looking to sign up as a fresher?{' '}
+                        <span onClick={() => navigate('/signup')} style={{ color: '#6c63ff', cursor: 'pointer', fontWeight: 500 }}>Get Referred Free →</span>
+                    </p>
                 </div>
             </div>
         </div>
     );
 };
-export default Frame2148;
+
+export default ContactPage;

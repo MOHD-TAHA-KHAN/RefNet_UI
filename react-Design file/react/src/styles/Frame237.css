@@ -1,12 +1,13 @@
 
 .scroll-container {
-        height: 100%;
-width: 100%;
-overflow: auto;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
       }
 .Pixso-frame-2_37 {
         width: 100%;
-height: 941px;
+height: auto;
+min-height: 941px;
 position: relative;
 flex-shrink: 0;
 display: flex;

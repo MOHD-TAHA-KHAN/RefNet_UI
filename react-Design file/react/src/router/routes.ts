@@ -1,15 +1,18 @@
-import LandingPage from "@/pages/LandingPage";
-import LoginPage from "@/pages/LoginPage";
-import SignUpPage from "@/pages/SignUpPage";
-import Dashboard from "@/pages/Dashboard";
-import Profile from "@/pages/Profile";
-import JobListings from "@/pages/JobListings";
-import JobDetails from "@/pages/JobDetails";
-import Chat from "@/pages/Chat";
-import SettingsPage from "@/pages/SettingsPage";
-import AboutPage from "@/pages/AboutPage";
-import ContactPage from "@/pages/ContactPage";
-import OnboardingPage from "@/pages/OnboardingPage";
+import LandingPage       from '@/pages/LandingPage';
+import LoginPage         from '@/pages/LoginPage';
+import SignUpPage        from '@/pages/SignUpPage';
+import OAuthCallback     from '@/pages/OAuthCallback';
+import Dashboard         from '@/pages/Dashboard';
+import Profile           from '@/pages/Profile';
+import JobListings       from '@/pages/JobListings';
+import JobDetails        from '@/pages/JobDetails';
+import ReferralsPage     from '@/pages/ReferralsPage';
+import Chat              from '@/pages/Chat';
+import SettingsPage      from '@/pages/SettingsPage';
+import AboutPage         from '@/pages/AboutPage';
+import ContactPage       from '@/pages/ContactPage';
+import OnboardingPage    from '@/pages/OnboardingPage';
+import NotificationsPage from '@/pages/NotificationsPage';
 
 export interface RouteConfig {
   path: string;
@@ -19,84 +22,21 @@ export interface RouteConfig {
   showNavigation?: boolean;
 }
 
-export const routes: RouteConfig[] = [{
-          path: "/",
-          component: LandingPage,
-          name: "LandingPage",
-          showNavigation: false,
-        },
-{
-          path: "/login",
-          component: LoginPage,
-          name: "LoginPage",
-          showNavigation: false,
-        },
-{
-          path: "/signup",
-          component: SignUpPage,
-          name: "SignUpPage",
-          showNavigation: false,
-        },
-{
-          path: "/dashboard",
-          component: Dashboard,
-          name: "Dashboard",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/profile",
-          component: Profile,
-          name: "Profile",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/jobs",
-          component: JobListings,
-          name: "JobListings",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/jobs/:id",
-          component: JobDetails,
-          name: "JobDetails",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/chat",
-          component: Chat,
-          name: "Chat",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/settings",
-          component: SettingsPage,
-          name: "SettingsPage",
-          protected: true,
-          showNavigation: true,
-        },
-{
-          path: "/about",
-          component: AboutPage,
-          name: "AboutPage",
-          showNavigation: true,
-        },
-{
-          path: "/contact",
-          component: ContactPage,
-          name: "ContactPage",
-          showNavigation: true,
-        },
-{
-          path: "/onboarding",
-          component: OnboardingPage,
-          name: "OnboardingPage",
-          protected: true,
-          showNavigation: false,
-        }];
-
-
+export const routes: RouteConfig[] = [
+  { path: '/',               component: LandingPage,       name: 'LandingPage',       showNavigation: false },
+  { path: '/login',          component: LoginPage,         name: 'LoginPage',         showNavigation: false },
+  { path: '/signup',         component: SignUpPage,        name: 'SignUpPage',        showNavigation: false },
+  { path: '/auth/callback',  component: OAuthCallback,     name: 'OAuthCallback',     showNavigation: false },
+  { path: '/dashboard',      component: Dashboard,         name: 'Dashboard',         protected: true,  showNavigation: false },
+  { path: '/profile',        component: Profile,           name: 'Profile',           protected: true,  showNavigation: false },
+  { path: '/jobs',           component: JobListings,       name: 'JobListings',       protected: true,  showNavigation: false },
+  { path: '/jobs/:id',       component: JobDetails,        name: 'JobDetails',        protected: true,  showNavigation: false },
+  { path: '/referrals',      component: ReferralsPage,     name: 'ReferralsPage',     protected: true,  showNavigation: false },
+  { path: '/referrals/given',component: ReferralsPage,     name: 'ReferralsGiven',    protected: true,  showNavigation: false },
+  { path: '/chat',           component: Chat,              name: 'Chat',              protected: true,  showNavigation: false },
+  { path: '/notifications',  component: NotificationsPage, name: 'Notifications',     protected: true,  showNavigation: false },
+  { path: '/settings',       component: SettingsPage,      name: 'SettingsPage',      protected: true,  showNavigation: false },
+  { path: '/about',          component: AboutPage,         name: 'AboutPage',         showNavigation: false },
+  { path: '/contact',        component: ContactPage,       name: 'ContactPage',       showNavigation: false },
+  { path: '/onboarding',     component: OnboardingPage,    name: 'OnboardingPage',    protected: true,  showNavigation: false },
+];
