@@ -21,6 +21,12 @@ const GridIcon = () => (
   </svg>
 );
 
+const HomeIcon = () => (
+  <svg viewBox="0 0 16 16" className="sidebar-nav-icon" fill="currentColor">
+    <path d="M8 1L1 6v9h4V9h6v6h4V6L8 1z"/>
+  </svg>
+);
+
 export const RefNetLogo = () => (
   <svg viewBox="0 0 18 18" fill="white" xmlns="http://www.w3.org/2000/svg">
     <rect x="2" y="11" width="14" height="2.5" rx="1.25"/>
@@ -69,6 +75,16 @@ const AppSidebar = ({ items, roleBadge }: AppSidebarProps) => {
       </nav>
 
       <div className="sidebar-spacer" />
+
+      {/* Back to Home button */}
+      <button
+        className="sidebar-nav-item"
+        onClick={() => navigate('/')}
+        style={{ marginBottom: 8, opacity: 0.7 }}
+      >
+        <HomeIcon />
+        Back to Home
+      </button>
 
       <div className="sidebar-user">
         <div className="sidebar-user-avatar">

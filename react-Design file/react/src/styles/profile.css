@@ -292,8 +292,77 @@
   margin-top: 0;
 }
 
+@media (max-width: 1024px) {
+  .profile-main {
+    max-width: 100%;
+    padding: 24px;
+  }
+}
+
 @media (max-width: 768px) {
-  .profile-main { padding: 20px 16px; }
-  .profile-tabs { flex-direction: column; }
-  .profile-view { flex-direction: column; }
+  .profile-main { 
+    padding: 20px 16px; 
+  }
+  
+  .profile-tabs { 
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .profile-tab {
+    flex: 1;
+    min-width: max-content;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+  
+  .profile-view { 
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-view-info {
+    align-items: center;
+  }
+  
+  .profile-section {
+    padding: 18px;
+  }
+  
+  .inbox-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .inbox-card-right {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .inbox-btn {
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-main {
+    padding: 16px 12px;
+  }
+  
+  .profile-header h1 {
+    font-size: 20px;
+  }
+  
+  .profile-view-avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .inbox-card-left {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

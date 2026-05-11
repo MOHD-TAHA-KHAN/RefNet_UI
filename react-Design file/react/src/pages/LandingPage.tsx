@@ -40,10 +40,10 @@ const LandingPage = () => {
 
                             {/* Nav links */}
                             <div id="2_48" className="Pixso-frame-2_48">
-                                <p id="2_49" className="Pixso-paragraph-2_49 clickable" onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>{"How it works"}</p>
-                                <p id="2_50" className="Pixso-paragraph-2_50 clickable" onClick={() => navigate('/contact')} style={{ cursor: 'pointer' }}>{"For Companies"}</p>
-                                <p id="2_51" className="Pixso-paragraph-2_51 clickable" onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>{"Pricing"}</p>
-                                <p id="2_52" className="Pixso-paragraph-2_52 clickable" onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>{"Blog"}</p>
+                                <p id="2_49" className="Pixso-paragraph-2_49 clickable" onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>{"How It Works"}</p>
+                                <p id="2_50" className="Pixso-paragraph-2_50 clickable" onClick={() => navigate('/contact')} style={{ cursor: 'pointer' }}>{"For Employers"}</p>
+                                <p id="2_51" className="Pixso-paragraph-2_51 clickable" onClick={() => navigate('/pricing')} style={{ cursor: 'pointer' }}>{"Pricing"}</p>
+                                <p id="2_52" className="Pixso-paragraph-2_52 clickable" onClick={() => navigate('/resources')} style={{ cursor: 'pointer' }}>{"Resources"}</p>
                             </div>
 
                             {/* CTA buttons */}
@@ -226,8 +226,27 @@ const LandingPage = () => {
                 <div id="2_140" className="Pixso-frame-2_140">
                     <div className="frame-content-2_140">
                         <p id="2_141" className="Pixso-paragraph-2_141">{"Professionals from:"}</p>
-                        {["Google", "Flipkart", "Infosys", "Wipro", "TCS", "Amazon"].map((co, i) => (
-                            <p key={co} id={`2_${142 + i}`} className={`Pixso-paragraph-2_${142 + i}`}>{co}</p>
+                        {[
+                            { name: "Google", url: "https://www.google.com/about/careers/" },
+                            { name: "Flipkart", url: "https://www.flipkartcareers.com/" },
+                            { name: "Infosys", url: "https://www.infosys.com/careers/" },
+                            { name: "Wipro", url: "https://careers.wipro.com/" },
+                            { name: "TCS", url: "https://www.tcs.com/careers" },
+                            { name: "Amazon", url: "https://www.amazon.jobs/" }
+                        ].map((co, i) => (
+                            <a 
+                                key={co.name} 
+                                id={`2_${142 + i}`} 
+                                className={`Pixso-paragraph-2_${142 + i} clickable`}
+                                href={co.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit', transition: 'color 0.2s' }}
+                                onMouseEnter={(e) => e.currentTarget.style.color = '#4f6ef7'}
+                                onMouseLeave={(e) => e.currentTarget.style.color = 'inherit'}
+                            >
+                                {co.name}
+                            </a>
                         ))}
                     </div>
                 </div>
@@ -249,20 +268,30 @@ const LandingPage = () => {
                         <div className="landing-footer-links">
                             <div className="footer-col">
                                 <p className="footer-col-title">Product</p>
-                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>How it works</span>
+                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>How It Works</span>
                                 <span onClick={() => navigate('/jobs')} style={{ cursor: 'pointer' }}>Browse Jobs</span>
-                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>Pricing</span>
+                                <span onClick={() => navigate('/pricing')} style={{ cursor: 'pointer' }}>Pricing</span>
                             </div>
                             <div className="footer-col">
                                 <p className="footer-col-title">Company</p>
-                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>About</span>
-                                <span onClick={() => navigate('/contact')} style={{ cursor: 'pointer' }}>Contact</span>
-                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>Blog</span>
+                                <span onClick={() => navigate('/about')} style={{ cursor: 'pointer' }}>About Us</span>
+                                <span onClick={() => navigate('/contact')} style={{ cursor: 'pointer' }}>For Employers</span>
+                                <span onClick={() => navigate('/resources')} style={{ cursor: 'pointer' }}>Resources</span>
+                            </div>
+                            <div className="footer-col">
+                                <p className="footer-col-title">Top Companies</p>
+                                <a href="https://www.google.com/about/careers/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>Google Careers</a>
+                                <a href="https://www.flipkartcareers.com/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>Flipkart Careers</a>
+                                <a href="https://www.infosys.com/careers/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>Infosys Careers</a>
+                                <a href="https://careers.wipro.com/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>Wipro Careers</a>
+                                <a href="https://www.tcs.com/careers" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>TCS Careers</a>
+                                <a href="https://www.amazon.jobs/" target="_blank" rel="noopener noreferrer" style={{ cursor: 'pointer', textDecoration: 'none', color: 'inherit' }}>Amazon Jobs</a>
                             </div>
                             <div className="footer-col">
                                 <p className="footer-col-title">Account</p>
                                 <span onClick={() => navigate('/login')} style={{ cursor: 'pointer' }}>Log In</span>
                                 <span onClick={() => navigate('/signup')} style={{ cursor: 'pointer' }}>Sign Up</span>
+                                <span onClick={() => navigate('/dashboard')} style={{ cursor: 'pointer' }}>Dashboard</span>
                             </div>
                         </div>
                     </div>
