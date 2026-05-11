@@ -76,8 +76,30 @@ const Dashboard = () => {
         <div className="page-header" style={{ paddingBottom: 20 }}>
           <div>
             <h1 className="page-title">Welcome back, {user?.name?.split(' ')[0] ?? 'Priya'} 👋</h1>
+            <p className="page-subtitle">Here's what's happening with your referrals today</p>
           </div>
           <div className="header-actions">
+            <button 
+              className="btn btn-outline btn-sm" 
+              onClick={() => navigate('/')}
+              style={{ display: 'flex', alignItems: 'center', gap: 6 }}
+            >
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 1L1 8l7 7v-4c4 0 6 1 7 4-1-4-2-7-7-7V1z"/>
+              </svg>
+              Home
+            </button>
+            <button 
+              className="btn btn-primary btn-sm" 
+              onClick={() => navigate('/profile')}
+              style={{ display: 'flex', alignItems: 'center', gap: 6 }}
+            >
+              <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                <circle cx="8" cy="5" r="3"/>
+                <path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6H2z"/>
+              </svg>
+              Edit Profile
+            </button>
             <NotificationBell />
             <div className="user-avatar-btn" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#4f6ef7', color: '#fff', fontWeight: 700, fontSize: 14 }}>
               {user?.name?.[0] ?? 'P'}

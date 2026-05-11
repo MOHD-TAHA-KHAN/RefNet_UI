@@ -13,6 +13,8 @@ import AboutPage         from '@/pages/AboutPage';
 import ContactPage       from '@/pages/ContactPage';
 import OnboardingPage    from '@/pages/OnboardingPage';
 import NotificationsPage from '@/pages/NotificationsPage';
+import PricingPage       from '@/pages/PricingPage';
+import ResourcesPage     from '@/pages/ResourcesPage';
 
 export interface RouteConfig {
   path: string;
@@ -38,5 +40,7 @@ export const routes: RouteConfig[] = [
   { path: '/settings',       component: SettingsPage,      name: 'SettingsPage',      protected: true,  showNavigation: false },
   { path: '/about',          component: AboutPage,         name: 'AboutPage',         showNavigation: false },
   { path: '/contact',        component: ContactPage,       name: 'ContactPage',       showNavigation: false },
+  { path: '/pricing',        component: PricingPage,       name: 'PricingPage',       showNavigation: false },
+  { path: '/resources',      component: ResourcesPage,     name: 'ResourcesPage',     showNavigation: false },
   { path: '/onboarding',     component: OnboardingPage,    name: 'OnboardingPage',    protected: true,  showNavigation: false },
 ];

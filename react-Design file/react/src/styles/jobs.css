@@ -286,8 +286,55 @@
   border-color: #6c63ff;
 }
 
+@media (max-width: 1024px) {
+  .jobs-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
 @media (max-width: 768px) {
-  .jobs-main { padding: 20px 16px; }
-  .jobs-layout { flex-direction: column; }
-  .jobs-filters { width: 100%; }
+  .jobs-main { 
+    padding: 20px 16px; 
+    gap: 20px;
+  }
+  
+  .jobs-layout { 
+    flex-direction: column; 
+  }
+  
+  .jobs-filters { 
+    width: 100%; 
+    order: 2;
+  }
+  
+  .jobs-results {
+    order: 1;
+  }
+  
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .jobs-header h1 {
+    font-size: 20px;
+  }
+  
+  .jobs-search-bar {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobs-main {
+    padding: 16px 12px;
+  }
+  
+  .job-listing-card {
+    padding: 16px;
+  }
+  
+  .jlc-tags {
+    gap: 4px;
+  }
 }

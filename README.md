@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="LandingPage.png" alt="RefNet Landing Page" width="100%" />
+  <img src="screenshots/LandingPage.png" alt="RefNet Landing Page" width="100%" />
 </p>
 
 <h1 align="center">RefNet — India's #1 Referral Network for Freshers</h1>
@@ -24,73 +24,73 @@
 ## 📸 Screenshots
 
 ### Landing Page
-![Landing Page](LandingPage.png)
+![Landing Page](screenshots/LandingPage.png)
 > Public home page with hero section, live search bar, "How RefNet Works" steps, company logos bar, and footer.
 
 ---
 
 ### Login / Register
-![Login Page](Login%20Page.png)
+![Login Page](screenshots/Login%20Page.png)
 > Two-column layout — brand pitch on the left, sign-in form on the right. Supports Fresher / Professional / HR / Company roles and Google OAuth.
 
 ---
 
 ### Fresher Dashboard
-![Fresher Dashboard](Fresher%20DashBoard.png)
+![Fresher Dashboard](screenshots/Fresher%20DashBoard.png)
 > Stat cards (Referrals Sent, Pending, Referred, Profile Views), Active Referrals list with status badges, and Recommended Jobs with "Get Referred" CTAs.
 
 ---
 
 ### Browse Jobs + Detail
-![Browse Jobs](JobList_DetailsADDED.png)
+![Browse Jobs](screenshots/JobList_DetailsADDED.png)
 > Three-panel layout: filter sidebar (Experience / Location / Job Type), job list with salary and referrer count, and inline job detail with Request Referral + Save Job buttons.
 
 ---
 
 ### Match / Suggested Referrers
-![Suggested Referrers](Request_Referral.png)
+![Suggested Referrers](screenshots/Request_Referral.png)
 > AI-matched referrer cards with compatibility score, skill chips, years at company, and referrals given. Top Match highlighted with a banner.
 
 ---
 
 ### Referral Detail + Status Timeline
-![Referral Status](ReferralStatus.png)
+![Referral Status](screenshots/ReferralStatus.png)
 > Breadcrumb navigation, referral timeline (Request Sent → Accepted → Referred to HR → Interview Scheduled), Your Referrer card, and Application Note.
 
 ---
 
 ### Messages / Chat
-![Messages](Messenging_Page.png)
+![Messages](screenshots/Messenging_Page.png)
 > Conversation list with search, active chat window with blue (sent) / white (received) bubbles, and message input with send button.
 
 ---
 
 ### Professional Inbox
-![Professional Inbox](Referral_InboxForHR%26Professional.png)
+![Professional Inbox](screenshots/Referral_InboxForHR%26Professional.png)
 > Professional role view — incoming referral requests with requester details, skill tags, and Accept / Decline / View Profile actions.
 
 ---
 
 ### Create Job Posting (HR)
-![Job Posting](JobPosting.png)
+![Job Posting](screenshots/JobPosting.png)
 > HR / Company dashboard for creating job postings with live preview card, required skills tags, experience level dropdown, and application deadline.
 
 ---
 
 ### My Profile + Resume
-![My Profile](MyProfile.png)
+![My Profile](screenshots/MyProfile.png)
 > Profile completeness bar, contact & links, skills chips, resume upload card with download/preview, and experience / projects timeline.
 
 ---
 
 ### Notifications Page
-![Notifications](NotificationPage.png)
+![Notifications](screenshots/NotificationPage.png)
 > Full notifications page grouped by Today / Yesterday with colored icons, unread blue dot, and action buttons like "View Referrers".
 
 ---
 
 ### Notification Bell Dropdown
-<img src="NotificationPopUpBox.png" alt="Notification Dropdown" width="420" />
+<img src="screenshots/NotificationPopUpBox.png" alt="Notification Dropdown" width="420" />
 
 > Compact dropdown from the bell icon — shows top notifications with Mark all read and View all link.
 
