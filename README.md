@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="screenshots/LandingPage.png" alt="RefNet Landing Page" width="100%" />
+  <img src="LandingPage.png" alt="RefNet Landing Page" width="100%" />
 </p>
 
 <h1 align="center">RefNet — India's #1 Referral Network for Freshers</h1>
